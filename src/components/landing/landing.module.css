@@ -1,0 +1,43 @@
+/* landing.module.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .rightSection{
+    position: relative;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .big-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .right-section {
+    flex: 1;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
