@@ -6,6 +6,7 @@
     --btnBlue:#217bbc;
     --btnBlueHover:#259df4;
     --btnBlueFocus:#0081dd;
+    --boxCont:rgb(202, 202, 202);
   }
 
   
@@ -17,6 +18,7 @@
     --btnBlue:#124c75;
     --btnBlueHover:#1d4c6d;
     --btnBlueFocus:#274961;
+    --boxCont:#314e63;
   }
   
   .light {
@@ -27,6 +29,7 @@
     --btnBlue:#217bbc;
     --btnBlueHover:#259df4;
     --btnBlueFocus:#0081dd;
+    --boxCont:rgb(202, 202, 202);
   }
   
   .container {

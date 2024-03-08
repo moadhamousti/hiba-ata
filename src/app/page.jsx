@@ -4,6 +4,7 @@ import styles from './homepage.module.css'
 import Landing from "@/components/landing/Landing";
 import About from "@/components/about/About";
 import Features from "@/components/features/Features";
+import Questions from "@/components/faq/Questions";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Landing/>
       <About/>
       <Features/>
+      <Questions/>
     </div>
   );
 }

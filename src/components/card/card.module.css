@@ -3,17 +3,23 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 20px 20px 20px 20px;
+  background-color: var(--boxCont);
+  border-radius: 10px;
 }
 
 .imageContainer {
   flex: 1;
   height: 350px;
   position: relative;
+  
 }
 
 .image {
   object-fit: cover;
+  border-radius: 10px;
 }
+
 
 .textContainer {
   flex: 1;
