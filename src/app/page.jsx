@@ -7,6 +7,9 @@ import Features from "@/components/features/Features";
 import Questions from "@/components/faq/Questions";
 import Newsletter from "@/components/newsletter/Newsletter";
 
+import Questions from "@/components/faq/Questions";
+import Newsletter from "@/components/newsletter/Newsletter";
+
 
 export default function Home() {
   return (
