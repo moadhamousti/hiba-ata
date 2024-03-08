@@ -3,18 +3,19 @@
     --textColor: black;
     --softBg: #f0f0f0;
     --softTextColor: #626262;
+    --grayBack:#e2e1e1;
     --btnBlue:#217bbc;
     --btnBlueHover:#259df4;
     --btnBlueFocus:#0081dd;
   }
-
   
   .dark { 
-    --bg: #0f172a;
+    --bg: #000000;
     --textColor: #ddd;
     --softBg: #1f273a;
     --softTextColor: #a6a6a6;
     --btnBlue:#124c75;
+    --grayBack:#2c2b2b;
     --btnBlueHover:#1d4c6d;
     --btnBlueFocus:#274961;
   }
