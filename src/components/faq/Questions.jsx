@@ -35,7 +35,6 @@ const Questions = () => {
         <div key={index} className={`${styles.faq} ${index === activeIndex ? styles.active : ''}`} onClick={() => toggleFaq(index)}>
           <div className={styles.question}>
             <h3>{faq.question}</h3>
-            {/* <KeyboardArrowDownIcon className={styles.svg}/> */}
             <div className={styles.iconWrapper}>
               <KeyboardArrowDownIcon />
             </div>
