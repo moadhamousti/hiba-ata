@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ThemeContextProvider>
           <ThemeProvider>
-            <div className='container'>
-              <div className='wrapper'>
+            <div className='min-h-screen bg-bg text-textColor'>
+              <div className='max-w-screen-xl mx-auto px-8'>
                 <Navbar/>
                 {children}
                 <Footer/>

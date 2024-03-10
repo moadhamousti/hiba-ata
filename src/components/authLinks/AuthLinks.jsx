@@ -3,6 +3,9 @@
 import Link from 'next/link'
 import styles from './authLinks.module.css'
 import { useState } from 'react';
+import { Button } from '@mui/material';
+import LoginIcon from '@mui/icons-material/Login';
+
 
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
@@ -10,8 +13,25 @@ const AuthLinks = () => {
   return (
     <>
       {status === "notauthenticated" ? (
-        // <button href="/" className={styles.button}>Login</button>
-        <Link href="/login" className={styles.link}>Login</Link>
+        // <Button href="/login" ></Button>
+        <Link className={styles.link} href='/login'>
+          <Button
+      variant="contained"
+      sx={{
+        backgroundColor: '#569437',
+        color: 'white',
+        textTransform: 'none',
+        '&:hover': {
+          backgroundColor: '#356120'
+        }
+      }}
+      endIcon={<LoginIcon />}
+    >
+      Log in
+    </Button>
+        </Link> 
+        // <Link href="/login" >Login</Link>
+
 
       ):(
         <>

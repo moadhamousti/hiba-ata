@@ -1,20 +1,20 @@
-.container {
+/* .container {
   margin-top: 30px;
-}
+} */
 
-.title {
+/* .title {
   font-size: 96px;
   font-weight: 300;
-}
+} */
 
-.post {
+/* .post {
   margin-top: 60px;
   display: flex;
   align-items: center;
   gap: 50px;
-}
+} */
 
-.imgContainer {
+/* .imgContainer {
   flex: 1;
   height: 500px;
   position: relative;
@@ -22,27 +22,27 @@
 
 .image {
   object-fit: cover;
-}
+} */
 
-.textContainer {
+/* .textContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
-.postTitle {
+/* .postTitle {
   font-size: 60px;
-}
+} */
 
-.postDesc {
+/* .postDesc {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
   color: var(--softTextColor);
-}
+} */
 
-.button {
+/* .button {
   padding: 16px 20px;
   border: none;
   background-color: rgb(37, 144, 220);
@@ -52,9 +52,9 @@
   font-weight: 500;
   color: white;
   cursor: pointer;
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-color: rgb(25, 96, 147);
 }
 
@@ -84,4 +84,4 @@
   .title {
     font-size: 36px;
   }
-}
+} */

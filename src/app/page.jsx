@@ -10,7 +10,7 @@ import Newsletter from "@/components/newsletter/Newsletter";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="min-h-screen bg-bg text-textColor">
       <Landing/>
       <About/>
       <Features/>

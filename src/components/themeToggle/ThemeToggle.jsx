@@ -10,7 +10,7 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className={styles.container}
+      className='w-10 h-5 rounded-full cursor-pointer flex items-center justify-between relative mt-1'
       onClick={toggle}
       style={
         theme === "dark" ? { backgroundColor: "white" } : { backgroundColor: "#0f172a" }
@@ -18,7 +18,7 @@ const ThemeToggle = () => {
     >
       <Image src="/moon.png" alt="" width={14} height={14} />
       <div
-        className={styles.ball}
+        className='w-5 h-5 rounded-full absolute'
         style={
           theme === "dark"
             ? { left: 1, background: "#0f172a" }

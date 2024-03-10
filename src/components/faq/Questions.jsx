@@ -27,7 +27,7 @@ const Questions = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className='{styles.container}'>
       <div className={styles.title}>
         <b>FAQs</b>
       </div>

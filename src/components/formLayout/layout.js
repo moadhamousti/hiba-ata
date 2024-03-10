@@ -11,8 +11,8 @@ export default function LoginLayout({ children }) {
       <body className={inter.className}>
         <ThemeContextProvider>
           <ThemeProvider>
-            <div className="container">
-              <div className="wrapper">
+            <div className='min-h-[auto]'>
+              <div className='max-w-screen-2xl ml-auto mr-auto pl-[80px] pr-[80px]'>
                 {children}
               </div>
             </div>
