@@ -1,30 +1,21 @@
-import React from 'react'
-import styles from './about.module.css'
-import Image from 'next/image'
+import React from 'react';
+
 const About = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>
-        <b>What We Do</b>
-      </h1>
-      <div className={styles.post}>
-        <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt='' fill className={styles.image}/>
-        </div>
-        <div className={styles.textContainer}>
-          <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit </h1>
-          <p className={styles.postDesc}>
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Numquam tenetur tempore
-            sint nemo dignissimos facere enim debitis, 
-            minima totam, corrupti vitae ad ducimus 
-            commodi fugit labore non natus pariatur aliquid.
-          </p>
-          <button className={styles.button}>Read More</button>
-        </div>
-      </div>
-    </div>
-  )
-}
+    <div className=" px-6 py-8 mt-8">
+      {/* <div className=''> */}
 
-export default About
+          
+        <ul className='flex list-disc  text-6xl m-10  uppercase justify-center items-center '>
+          <li className='text-center'><b>About Us</b> 
+          </li>
+        </ul>
+        <ul className='flex list-disc list-inside  gap-8 text-2xl '>
+          <li className=' '>We believe in the power of collective action to address healthcare disparities and ensure that essential medical resources reach underserved communities around the world.</li>
+          <li className=' '>We believe in the power of collective action to address healthcare disparities and ensure that essential medical resources reach underserved communities around the world.</li>
+        </ul>
+    </div>
+  );
+};
+
+export default About;

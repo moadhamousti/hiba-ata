@@ -1,3 +1,29 @@
 .container{
-    flex: 2;
+    flex: 1;
+    /* background-color: blueviolet; */
+    margin: 50px 0;
+
 }
+
+@media screen and (max-width: 1280px){
+    .container {
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .container {
+        margin: 50px 0;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+      /* max-width: 475px; */
+      display: none;
+      }}
+@media screen and (max-width: 640px){
+    .container {
+      max-width: 475px;
+      /* display: none; */
+      }}

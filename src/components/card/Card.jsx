@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Card = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.cardContainer}>
         <div className={styles.imageContainer}>
             <Image className={styles.image} src='/p1.jpeg' alt='' fill/>
         </div>
@@ -17,14 +17,14 @@ const Card = () => {
                 <span className={styles.category}>EQUIPEMENT MEDICAL</span>
             </div>
             <Link href=''>
-                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
             </Link>
-            <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            {/* <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Assumenda consequuntur vitae fugiat consectetur tempore
                  minima sapiente, iure architecto voluptates quidem, voluptate, 
                  dignissimos earum! Dolore quasi vel cupiditate impedit officia asperiores!
-            </p>
-            <Link href='' className={styles.link}>Read More</Link>
+            </p> */}
+            <Link href='/post' className={styles.link}>Read More</Link>
         </div>
     </div>
   )

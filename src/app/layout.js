@@ -5,6 +5,7 @@ import Footer from '@/components/footer/Footer'
 import { ThemeContextProvider } from '@/context/ThemeContext'
 import ThemeProvider from '@/providers/ThemeProvider'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -20,9 +21,9 @@ export default function RootLayout({ children }) {
           <ThemeProvider>
             <div className='container'>
               <div className='wrapper'>
-                <Navbar/>
+                <Navbar />
                 {children}
-                <Footer/>
+                <Footer />
               </div>
             </div>
           </ThemeProvider>

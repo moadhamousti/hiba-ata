@@ -10,7 +10,7 @@ const AuthLinks = () => {
   return (
     <>
       {status === "notauthenticated" ? (
-        <button href="/" className={styles.button}>Login</button>
+        <button href="/login" className={styles.button}>Login</button>
       ):(
         <>
         <Link href="/post" className={styles.link}>Post</Link>
@@ -28,7 +28,7 @@ const AuthLinks = () => {
           <Link href="/">Features</Link>
           <Link href="/">Contact</Link>
           {status === "notauthenticated" ? (
-            <button href="/" className={styles.button}>Login</button>
+            <button href="/login" className={styles.button}>Login</button>
           ):(
             <>
             <Link href="/post">Post</Link>

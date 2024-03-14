@@ -1,3 +1,7 @@
+/* styles.css */
+@import 'tailwindcss';
+
+
 .container {
   display: flex;
   align-items: center;
