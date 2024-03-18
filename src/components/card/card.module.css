@@ -18,13 +18,14 @@
   /* padding: 0px 0px 20px 0px; */
   background-color: var(--boxCont);
   border-radius: 10px;
-  height: 481px;
-  width:444px;
+  height: 381px;
+  width:244px;
 }
 .imageContainer {
-  /* flex: 1; */
-  height: 414px;
-  width: 444px;
+  flex: 1;
+  
+  height:inherit;
+  width: inherit;
   position: relative;
 
   

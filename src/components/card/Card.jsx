@@ -1,33 +1,47 @@
-import Image from 'next/image'
-import styles from './card.module.css'
-import Link from 'next/link'
+"use client"
 
-const Card = () => {
+import * as React from 'react';
+import CardMUI from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import { red } from '@mui/material/colors';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { useTheme } from '@mui/material/styles';
+import { Divider } from '@mui/material';
+
+export default function Card() {
+  const [expanded, setExpanded] = React.useState(false);
+  const theme = useTheme();
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <div className={styles.cardContainer}>
-        <div className={styles.imageContainer}>
-            <Image className={styles.image} src='/p1.jpeg' alt='' fill/>
-        </div>
-        <div className={styles.GrayContainer}>
-            
-        </div>
-        <div className={styles.textContainer}>
-            <div className={styles.detail}>
-                <span className={styles.date}>07.03.2024 - </span>
-                <span className={styles.category}>EQUIPEMENT MEDICAL</span>
-            </div>
-            <Link href=''>
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-            </Link>
-            {/* <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Assumenda consequuntur vitae fugiat consectetur tempore
-                 minima sapiente, iure architecto voluptates quidem, voluptate, 
-                 dignissimos earum! Dolore quasi vel cupiditate impedit officia asperiores!
-            </p> */}
-            <Link href='/post' className={styles.link}>Read More</Link>
-        </div>
-    </div>
-  )
+    <CardMUI sx={{ maxWidth: 345 ,marginBlock:2 }}>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }
+        title="Shrimp and Chorizo Paella"
+        subheader="September 14, 2016"
+      />
+      <CardMedia
+        component="img"
+        height="194"
+        image="./p1.jpeg"
+        alt="Paella dish"
+      />
+          <Divider variant="inset"  />
+    </CardMUI>
+  );
 }
-
-export default Card

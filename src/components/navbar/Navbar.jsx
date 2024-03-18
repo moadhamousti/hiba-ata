@@ -9,11 +9,11 @@ const Navbar = () => {
       <div className="text-lg font-bold">
         <Link href={"/"}>Charity</Link>
       </div>
-      <div className="flex space-x-4 max-sm:hidden ">
-        <Link href="" className="hover:text-gray-300">What We Do</Link>
-        <Link href="" className="hover:text-gray-300">Features</Link>
-        <Link href="" className="hover:text-gray-300">FAQ</Link>
-        <Link href="" className="hover:text-gray-300">Contact</Link>
+      <div className="flex text-black font-semibold space-x-4  max-sm:hidden ">
+        <Link href="/" className="hover:underline underline-offset-8 hover:text-blue-500 focus:underline  focus:text-blue-500  text-[--textColor]   ">Home</Link>
+        <Link href="" className="hover:underline underline-offset-8 hover:text-blue-500 focus:underline  focus:text-blue-500  text-[--textColor]   ">About US</Link>
+        <Link href="" className="hover:underline underline-offset-8 hover:text-blue-500 focus:underline  focus:text-blue-500  text-[--textColor]   ">Features</Link>
+        <Link href="" className="hover:underline underline-offset-8 hover:text-blue-500 focus:underline  focus:text-blue-500  text-[--textColor]   ">FAQ</Link>
       </div>
       <div className='flex gap-2'>
         <ThemeToggle />

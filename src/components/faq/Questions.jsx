@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from 'react';
-import styles from './questions.module.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const faqData = [
@@ -27,20 +26,20 @@ const Questions = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.title}>
-        <b>FAQs</b>
+    <div className="m-auto mt-8 flex flex-col items-center">
+      <div className="text-6xl text-center font-bold">
+        FAQs
       </div>
       {faqData.map((faq, index) => (
-        <div key={index} className={`${styles.faq} ${index === activeIndex ? styles.active : ''}`} onClick={() => toggleFaq(index)}>
-          <div className={styles.question}>
-            <h3>{faq.question}</h3>
-            <div className={styles.iconWrapper}>
+        <div key={index} className={`max-w-max mt-8 pb-16  border-b-2 border-gray-200 cursor-pointer p-4 ${activeIndex === index ? 'active' : ''}`} onClick={() => toggleFaq(index)}>
+          <div className="flex justify-between items-center">
+            <h3 className="text-3xl text-[--TextColor] font-semibold">{faq.question}</h3>
+            <div className={`transition-transform duration-500 ease-in ${activeIndex === index ? 'rotate-180' : ''}`}>
               <KeyboardArrowDownIcon />
             </div>
           </div>
-          <div className={styles.answer}>
-            <p>{faq.answer}</p>
+          <div className={`overflow-hidden transition-all duration-700 ease-in-out ${activeIndex === index ? 'h-auto opacity-100 translate-y-0' : 'h-0 opacity-0 -translate-y-4'}`}>
+            <p className="pt-4 leading-6 text-lg  text-[--softTextColor]">{faq.answer}</p>
           </div>
         </div>
       ))}
@@ -49,3 +48,4 @@ const Questions = () => {
 };
 
 export default Questions;
+

@@ -1,52 +1,28 @@
-import React from "react";
-import styles from "./footer.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.info}>
-        <div className={styles.logo}>
-          {/* <Image src="/logo.png" alt="lama blog" width={50} height={50} /> */}
-          <h1 className={styles.logoText}>Charity</h1>
+    <div className="">
+    <div className="mt-10  flex items-center justify-between sm:flex-row gap-10 sm:gap-0 text-gray-500 border-b-2 border-gray-400 pb-8 mb-4">
+        <div className="flex items-center gap-2">
+          <Image src="/logo.png" alt="Charity blog" width={52} height={52} />
         </div>
-        <p className={styles.desc}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          necessitatibus similique aspernatur obcaecati veritatis. Aperiam cum
-          porro sequi, totam minima consequuntur, aspernatur deleniti vero
-          repellendus dorales.
-        </p>
-        <div className={styles.icons}>
-          <Image src="/facebook.png" alt="" width={18} height={18} />
-          <Image src="/instagram.png" alt="" width={18} height={18} />
-          <Image src="/tiktok.png" alt="" width={18} height={18} />
-          <Image src="/youtube.png" alt="" width={18} height={18} />
+        <div className="flex mt-2 gap-2">
+          <Link href="/" ><Image src="/facebook.png"   alt="Facebook" width={44} height={44} /></Link>
+          <Link href="/" ><Image src="/instagram.png" alt="Instagram" width={44} height={44} /></Link>
+          <Link  href="/"><Image src="/twitter.png" alt="Tiktok" width={44} height={44} /></Link>
         </div>
       </div>
-      <div className={styles.links}>
-        <div className={styles.list}>
-          <span className={styles.listTitle}>Links</span>
-          <Link href="/">Homepage</Link>
+
+        <div className="flex flex-end gap-2 mb-2 pb-16 font-normal text-[--softTextColor]">
+          <Link href="/">Home</Link>
           <Link href="/">Blog</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
         </div>
-        {/* <div className={styles.list}>
-          <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
-          <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
-        </div> */}
-        <div className={styles.list}>
-          <span className={styles.listTitle}>Social</span>
-          <Link href="/">Facebook</Link>
-          <Link href="/">Instagram</Link>
-          <Link href="/">Tiktok</Link>
-          <Link href="/">Youtube</Link>
-        </div>
-      </div>
+
     </div>
   );
 };
