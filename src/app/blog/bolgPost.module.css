@@ -1,0 +1,8 @@
+
+
+.content{
+    display: flex; 
+    flex-direction: column;
+    gap: 0;
+    margin-right: 45px;
+}

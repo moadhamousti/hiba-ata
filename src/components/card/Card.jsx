@@ -10,6 +10,7 @@ import { red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useTheme } from '@mui/material/styles';
 import { Divider } from '@mui/material';
+import Link from 'next/link';
 
 export default function Card() {
   const [expanded, setExpanded] = React.useState(false);
@@ -35,12 +36,14 @@ export default function Card() {
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       />
+     <Link href='/SinglePost'>
       <CardMedia
         component="img"
         height="194"
         image="./p1.jpeg"
         alt="Paella dish"
-      />
+              />
+      </Link>
           <Divider variant="inset"  />
     </CardMUI>
   );
