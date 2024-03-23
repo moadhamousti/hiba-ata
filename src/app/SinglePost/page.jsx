@@ -4,7 +4,7 @@ import React from 'react';
 const SinglePost = () => {
     return (
 <div className='py-6 px-1 shadow-lg'>
-        <h1 className="sm:text-4xl text-2xl  text-[textColor] sm:font-bold font-medium sm:my-4 capitalize  text-center sm:text-left">Details post</h1>
+        <h1 className="text-4xl   text-[--textColor] sm:font-bold fsm:my-4 capitalize  text-center sm:text-left">Details post</h1>
 <div className="  sm:flex  justify-between   ">
 
     <div className="bg-[--bg]  w-2/2 rounded   overflow-hidden max-w-xl sm:w-full">
@@ -15,13 +15,13 @@ const SinglePost = () => {
                 <div className="flex items-center">
                     <img  src="userPic.png" alt="Avatar" className=" rounded-full mr-2 object-cover"/>
                 <div className="flex flex-col items-center">
-                    <span className="text-[textColor] font-semibold">Youssra smith</span>
-                    <span className="text-[textColor] font-medium">Casablanca</span>
+                    <span className="text-[--textColor] font-semibold">Youssra smith</span>
+                    <span className="text-[--softTextColor] capitalize ">Casablanca</span>
                 </div>
                 </div>
-                <span className="text-[textColor]">2 hours ago</span>
+                <span className="text-[--softTextColor] ">2 hours ago</span>
             </div>
-            <p className="text-[textColor] leading-tight mb-4">
+            <p className="text-[--textColor] leading-tight mb-4">
                 Crafted with precision and innovation, this cutting-edge equipment is designed to elevate your fitness journey to unprecedented heights. Whether you're a seasoned athlete or just embarking on your wellness quest
             </p>
             
