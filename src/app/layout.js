@@ -1,12 +1,13 @@
 import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import Footer from '@/components/footer/Footer'
 import { ThemeContextProvider } from '@/context/ThemeContext'
 import ThemeProvider from '@/providers/ThemeProvider'
 
 
 const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['vietnamese'] })
 
 export const metadata = {
   title: 'Charity App',
@@ -16,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className} >
         <ThemeContextProvider>
           <ThemeProvider>
             <div className='container fontFamily'>

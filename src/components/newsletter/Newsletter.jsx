@@ -8,10 +8,9 @@ const Newsletter = () => {
             <div className="p-14 max-w-full  w-full bg-[#EF507F] text-center rounded-xl overflow-hidden">
                 <h2 className="font-bold text-2xl text-[--bg]">“STAY UPDATED ON OUR LATEST EFFORTS TO SHARE MEDICAL SUPPLIES AND EQUIPMENT SUBSCRIBING TO OUR NEWSLETTER”</h2>
                 <form className="relative mt-10  mx-auto   bg-nonesparent h-12 rounded-full shadow-md w-full sm:w-full">
-                    <label htmlFor="email" className="absolute ml-1 -top-10 left-0 text-lg text-[--grayBack] " >Email</label>
-                    <input id="email" className="absolute bg-[--bg] pl-6 text-lg  top-0 left-0 sm:w-full mx-auto w-full    h-12 rounded-full text-[--softTextColor]  " type='email' placeholder='Your email address...'></input>
+                    <input id="email" className="absolute bg-transparent border-2 border-solid border-[--b] pl-6 text-lg  top-0 left-0 sm:w-full mx-auto w-full  outline-none  h-12 rounded-full text-[--bg]  " type='email' placeholder='Your email address...'></input>
                 </form>
-                    <button role="button" aria-label="Subscribe" className="relative  mt-10 right-0 top-0   w-full  sm:w-96  h-12 text-[--bg] bg-transparant  shadow-md   text-2xl  font-medium  hover:text-[#EF507F] hover:bg-[--bg] border-2 border-[--bg ] hover:border-white rounded-full">Subscribe</button>
+                    <button role="button" aria-label="Subscribe" className="relative  mt-10 right-0 top-0   w-full  sm:w-96  h-12      text-3xl  font-semibold shadow-md  shadow-[--textColor] dark:shadow-[--bg] text-[#EF507F] bg-[--bg]   hover:text-[--bg] hover:bg-[#EF507F] border-2 border-solid border-[--bg] rounded-full">Subscribe</button>
             </div>
         </div>
     </div>

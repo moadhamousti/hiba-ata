@@ -5,16 +5,16 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const faqData = [
   {
-    question: 'What is this website about ?',
-    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, iste sit cumque, odit sequi fugit repellat pariatur incidunt omnis doloremque nisi similique voluptate praesentium nulla ipsum, eligendi illo necessitatibus.'
+    question: "Quel type d'équipements médicaux puis-je trouver sur ce site ?",
+    answer: "Notre site propose une variété d'équipements médicaux tels que des fauteuils roulants, des béquilles, des lits médicalisés, des déambulateurs, des appareils respiratoires, et bien plus encore. Nous faisons de notre mieux pour inclure une large gamme d'équipements pour répondre aux besoins divers de notre communauté."
   },
   {
-    question: 'How can I contact support?',
-    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, iste sit cumque, odit sequi fugit repellat pariatur incidunt omnis doloremque nisi similique voluptate praesentium nulla ipsum, eligendi illo necessitatibus.'
+    question: "Qui peut bénéficier de ces équipements médicaux gratuits ?",
+    answer: "Nos services sont disponibles pour toute personne ayant besoin d'équipements médicaux, qu'il s'agisse de patients, de personnes âgées, de personnes handicapées, ou de toute autre personne nécessitant ces équipements. Notre objectif est d'aider ceux qui en ont besoin à accéder à ces ressources gratuitement."
   },
   {
-    question: 'Is there a mobile app available?',
-    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, iste sit cumque, odit sequi fugit repellat pariatur incidunt omnis doloremque nisi similique voluptate praesentium nulla ipsum, eligendi illo necessitatibus.'
+    question: "Comment puis-je trouver des équipements médicaux sur ce site ? ",
+    answer: "Vous pouvez utiliser notre fonction de recherche avancée pour trouver des équipements médicaux en fonction de vos besoins spécifiques. Vous pouvez filtrer les résultats par type d"
   },
 ];
 

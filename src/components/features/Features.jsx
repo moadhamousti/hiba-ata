@@ -1,27 +1,27 @@
 import React from 'react'
-import { IconButton } from '@mui/material';
 
 const Services = () => {
   const servicesData = [
     { 
       icon: 'flaticon-test', 
-      title: "MAKE DONATION", 
-      description: "Simply select the items you'd like to donate, fill out a brief form...",
-      image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2d%2F23%2F5f%2F2d235f733c7fd7553ff283646bdf5bd1.png&tbnid=Tpim_PmaZSJ13M&vet=12ahUKEwiV8NTWgf-EAxX5TKQEHRhODIoQMygAegQIARBT..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F838021443157224675%2F&docid=muZuV7moV2cbfM&w=2380&h=1490&q=pixels&hl=en&client=opera-gx&ved=2ahUKEwiV8NTWgf-EAxX5TKQEHRhODIoQMygAegQIARBT"  // change with your actual image links
+      title: "Fonction de recherche avancée:", 
+      description: "Une fonction de recherche avancée permettant aux utilisateurs de trouver facilement les équipements dont ils ont besoin en fonction de critères spécifiques tels que le type d'équipement",
     },
     { 
       icon: 'flaticon-test', 
-      title: "MAKE DONATION", 
-      description: "Simply select the items you'd like to donate, fill out a brief form...",
-      image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2d%2F23%2F5f%2F2d235f733c7fd7553ff283646bdf5bd1.png&tbnid=Tpim_PmaZSJ13M&vet=12ahUKEwiV8NTWgf-EAxX5TKQEHRhODIoQMygAegQIARBT..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F838021443157224675%2F&docid=muZuV7moV2cbfM&w=2380&h=1490&q=pixels&hl=en&client=opera-gx&ved=2ahUKEwiV8NTWgf-EAxX5TKQEHRhODIoQMygAegQIARBT"  // change with your actual image links
+      title: "Profils d'utilisateurs:", 
+      description: "Offrir la possibilité aux utilisateurs de créer des profils personnels où ils peuvent spécifier leurs besoins en équipements médicaux et recevoir des notifications lorsque de nouveaux équipements correspondant à leurs critères sont disponibles",
     },
     { 
       icon: 'flaticon-test', 
-      title: "MAKE DONATION", 
-      description: "Simply select the items you'd like to donate, fill out a brief form...",
-      image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2d%2F23%2F5f%2F2d235f733c7fd7553ff283646bdf5bd1.png&tbnid=Tpim_PmaZSJ13M&vet=12ahUKEwiV8NTWgf-EAxX5TKQEHRhODIoQMygAegQIARBT..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F838021443157224675%2F&docid=muZuV7moV2cbfM&w=2380&h=1490&q=pixels&hl=en&client=opera-gx&ved=2ahUKEwiV8NTWgf-EAxX5TKQEHRhODIoQMygAegQIARBT"  // change with your actual image links
+      title: "Fonctionnalités de communication:", 
+      description: "Des fonctionnalités de communication intégrées telles que messagerie instantanée ou forums de discussion pour permettre aux utilisateurs de poser des questions, de demander de l'aide ou de partager des informations sur les équipements médicaux disponibles.",
     },
-    // add as many services as you like
+    { 
+      icon: 'flaticon-test', 
+      title: "Accessibilité:", 
+      description: "Garantir que le site est facilement accessible aux personnes handicapées en conformité avec les normes d'accessibilité Web.",
+    },
   ];
 
   return (
@@ -32,10 +32,8 @@ const Services = () => {
           {servicesData.map((service, index) => (
             <div 
               key={index}
-              style={{ imageUrl: `url(${service.image})` }}
               className="rounded-xl shadow px-4 bg-cover bg-[#00A4BF] rounded-l-none rounded-b-none" data-aos="fade-up" data-aos-delay="">
-              <i className={`fa ${service.icon}`}></i>
-              <h3 className="text-lg text-center py-6 text-[--bg] h-24 font-bold">{service.title}</h3>
+               <h3 className="text-lg text-center py-6 text-[--bg] h-24 font-bold">{service.title}</h3>
               <p className="text-[--bg] text-md py-4 pb-12">{service.description}</p>
             </div>
           ))}

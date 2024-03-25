@@ -54,7 +54,8 @@
   body {
     max-width: 100vw;
     overflow-x: hidden;
-    background-color: #F5F1EE;
+    background-color: #ecddc3 !important;
+
   }
   
   a {
@@ -62,19 +63,6 @@
     text-decoration: none;
   }
   
-  /* @layer base {
-    html {
-      font-family: "Montserrat", sans-serif;    
-      font-weight :400px;
-      font-style: normal;
-
-    }
-  } */
-  
-
-
-
-
 
   .wrapper {
     max-width: 1536px;
